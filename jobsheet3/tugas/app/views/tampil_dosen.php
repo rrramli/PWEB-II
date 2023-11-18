@@ -10,9 +10,15 @@ include 'navbar.php';
   <?php
   if(isset($_GET['success'])){
     ?>
-    <div class="alert alert-success" role="alert">
-      <?php $_GET['success']?>
+    <div class="alert alert-success" role="alert" id="successAlert">
+      <?php echo $_GET['success']?>
     </div>
+    <script>
+      // Menutup pesan alert setelah 2 detik
+      setTimeout(function(){
+        document.getElementById('successAlert').style.display = 'none';
+      }, 2000); // Waktu dalam milidetik (misalnya 2000 untuk 2 detik)
+    </script>
     <?php
   }
   ?>
