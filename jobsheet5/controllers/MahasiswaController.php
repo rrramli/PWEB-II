@@ -12,4 +12,20 @@
     public function getAllMahasiswa(){
         return $this->model->getAllMahasiswa();
     }
+
+    public function createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat){
+        return $this->model->createMahasiswa($nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
+    }
+
+    public function getMahasiswaById($id){
+        return $this->model->getMahasiswaById($id);
+    }
+
+    public function updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat){
+        return $this->model->updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
+    }
+
+    public function deleteMahasiswa($id){
+        return $this->model->deleteMahasiswa($id);
+    }
 }

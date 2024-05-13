@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /TA/
+
+RewriteRule ^home/?$ index.php?page=home
+RewriteRule ^produk/?$ views/produk/index.php
+RewriteRule ^suplier/?$ views/suplier/index.php
+
+RewriteRule ^proses_tambah/?$ views/produk/proses_tambah.php
+RewriteRule ^produkTambah/?$ views/produk/tambah.php
+RewriteRule ^produkEdit/?$ views/produk/edit.php
+RewriteRule ^produkHapus/?$ views/produk/hapus.php
+
+RewriteRule ^proses_tambah_sp/?$ views/suplier/proses_tambah.php
+RewriteRule ^suplierTambah/?$ views/suplier/tambah.php
+RewriteRule ^suplierEdit/?$ views/suplier/edit.php
+RewriteRule ^suplierHapus/?$ views/suplier/hapus.php

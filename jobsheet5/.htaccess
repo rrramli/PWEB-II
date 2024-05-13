@@ -1,0 +1,16 @@
+RewriteEngine On
+RewriteBase /jobsheet5/
+
+RewriteRule ^home/?$ index.php?page=home
+RewriteRule ^mahasiswa/?$ views/mahasiswa/index.php
+RewriteRule ^dosen/?$ views/dosen/index.php
+
+RewriteRule ^proses_tambah/?$ views/mahasiswa/proses_tambah.php
+RewriteRule ^mahasiswaTambah/?$ views/mahasiswa/tambah.php
+RewriteRule ^mahasiswaEdit/?$ views/mahasiswa/edit.php
+RewriteRule ^mahasiswaHapus/?$ views/mahasiswa/hapus.php
+
+RewriteRule ^proses_tambah_ds/?$ views/dosen/proses_tambah.php
+RewriteRule ^dosenTambah/?$ views/dosen/tambah.php
+RewriteRule ^dosenEdit/?$ views/dosen/edit.php
+RewriteRule ^dosenHapus/?$ views/dosen/hapus.php
